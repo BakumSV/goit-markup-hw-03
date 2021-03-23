@@ -17,10 +17,11 @@
 /* вторичный цвет фона - Наша команда #F5F4FA */
 body {
   margin: 0;
-  background-color: var(--main-background-color);
+  background-color: var(--white-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  overflow-x: hidden;
 }
 .container {
   margin: 0 auto;
@@ -235,15 +236,18 @@ img {
   text-align: center;
 }
 /* Crew */
-/* .crew-section {
-  padding-top: 94px;
-  margin-bottom: 94px;
-} */
+
+.crew-section {
+  background-color: var(--third-background-color);
+}
 .crew-list {
   display: flex;
 }
 .crew-list-item {
-  width: 270px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+  text-align: center;
 }
 .crew-list .crew-list-item + .crew-list-item {
   margin-left: 30px;
