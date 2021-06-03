@@ -23,8 +23,17 @@ body {
   color: var(--primary-text-color);
   overflow-x: hidden;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .container {
-  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,7 +63,6 @@ img {
   align-items: center;
 }
 .header-border {
-  /* position: absolute; */
   width: 1600px;
   height: 0px;
   left: 0px;
@@ -127,7 +135,7 @@ img {
 .portfolio-nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-nav .portfolio-nav-item + .portfolio-nav-item {
   margin-left: 8px;
@@ -224,6 +232,9 @@ img {
 .courses-list {
   display: flex;
 }
+.courses-section.section {
+  padding-top: 0;
+}
 .courses-list .courses-list-item + .courses-list-item {
   margin-left: 30px;
 }
@@ -240,19 +251,21 @@ img {
 .crew-section {
   background-color: var(--third-background-color);
 }
-.crew-list {
+.crew {
   display: flex;
 }
-.crew-list-item {
-  padding-bottom: 30px;
+.crew-list {
   background-color: var(--white-color);
   text-align: center;
 }
-.crew-list .crew-list-item + .crew-list-item {
+.crew .crew-list + .crew-list {
   margin-left: 30px;
 }
+.crew-list-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .crew-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -282,6 +295,8 @@ img {
   flex-basis: calc(100% / 3 - var(--projects-list-item-gap));
   margin-left: var(--projects-list-item-gap);
   margin-top: var(--projects-list-item-gap);
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
 .card-content {
